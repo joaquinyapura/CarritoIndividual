@@ -6,7 +6,7 @@ export const Item = ({ item }) => {
 
   return (
     <button
-      className="bg-slate-400 w-[90px] h-[30px] rounded-full "
+      className="bg-slate-400  text-center p-2 h-[50px] rounded-full hover:bg-green-300  "
       onClick={() => {
         console.log(item);
         setCart((currItem) => [
