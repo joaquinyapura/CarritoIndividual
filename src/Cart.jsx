@@ -10,9 +10,9 @@ export const Cart = () => {
     <div className="w-1/3 bg-slate-50 flex flex-col items-center">
       <h1 className="text-3xl font-bold">Carrito de compras</h1>
 
-      <div className="gap-4 w-full flex gap-0.5 flex-col">
+      <div className="gap-4 w-full grid grid-cols-3 mt-3">
         {cart.map((e) => {
-          return <ItemCart key={e.id} item={e} />;
+          return <ItemCart key={crypto.randomUUID()} item={e} />;
         })}
       </div>
       <div className="w-full bg-black text-white">

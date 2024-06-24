@@ -12,7 +12,7 @@ export const Item = ({ item }) => {
         setCart((currItem) => [
           ...currItem,
           {
-            id: item.id,
+            id: crypto.randomUUID(),
             nombre: item.nombre,
             precio: item.precio,
           },
